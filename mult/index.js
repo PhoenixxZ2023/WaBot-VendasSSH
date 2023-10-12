@@ -68,7 +68,7 @@ var ms = require("ms");
 var pms = require("parse-ms");
 var _require5 = require("/root/config");
 var config = _require5.config;
-time = ms("1d");
+time = ms("10d");
 time2 = ms("40m");
 expiraZ = ms("31d");
 d31 = moment.tz("America/Sao_Paulo").add(31, "d").format("DD/MM/yyyy");
@@ -437,7 +437,7 @@ async function connectToWhatsApp() {
             case "1":
             case "01":
                 if (await checkTeste(jid)) {
-                    return _getPageSource("Voc\u00ea j\u00e1 gerou um teste hoje, s\u00f3 poder\u00e1 gerar outro em 24h");
+                    return _getPageSource("Voc\u00ea j\u00e1 gerou um teste hoje, s\u00f3 poder\u00e1 gerar outro em 10 DIAS");
                 }
                 /** @type {string} */
                 usuarioT = "teste" + ("" + ale()).slice(0, 4);
